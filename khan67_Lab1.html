@@ -1,50 +1,309 @@
 <!DOCTYPE html>
 <html>
 <style>
-p {
+  p {
     display: block;
     width: 20%;
     float: left;
-}
-img {
-	width: 60px;
-	height: 60px;
-	}
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
 </style>
+
 <body>
 
 
 
-<h2>Pokemon</h2>
+  <h2>Pokemon</h2>
 
-<input type="text" name="Search Name" id="names">
-<input type="submit" name="Search Name" value="Search By Name" onClick="searchName()">
+  <input type="text" name="Search Name" id="names">
+  <input type="submit" name="Search Name" value="Search By Name" onClick="searchName()">
 
-<input type="text" name="Search Number" id="numbers">
-<input type="submit" name="Search Number" value="Search By Number" onClick="searchNumber()">
+  <input type="text" name="Search Number" id="numbers">
+  <input type="submit" name="Search Number" value="Search By Number" onClick="searchNumber()">
 
-<script src="PokemonData.js"></script>
+  <script src="PokemonData.js"></script>
 
-<ul style="list-style-type:none;">
+  <ul style="list-style-type:none;">
 
-  <li><b><p>Pokemon Image</p> <p>Pokemon Name</p> <p>Primary Type</p> <p>Secondary Type</p> <p>Description</p></b></li><br>
-  
-  
-  <li><p><img src=".\pokemon\1.png" alt="Bulbasaur"</p>
-  <p>Bulbasaur</p>
-  <p>Grass</p> 
-  <p>Poison</p>
-  <p>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth.</p>
-  </li><br>
-  
-  <li><p><img src=".\pokemon\2.png" alt="Ivysaur"></p>
-  <p>Ivysaur</p>
-  <p>Grass</p> 
-  <p>Poison</p>
-  <p>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth.</p>
-  </li>
-  
-  <!--<li><img src="C:\Users\khan67\Desktop\pokemon\1.png" alt="Bulbasaur" width="200" height="200"></li>
+    <li><b>
+        <p>Pokemon Image</p>
+        <p>Pokemon Name</p>
+        <p>Primary Type</p>
+        <p>Secondary Type</p>
+        <p>Pokemon Biology</p>
+      </b></li><br>
+
+
+    <li>
+      <p><img src=".\pokemon\1.png"> </p>
+      <p>Bulbasaur</p>
+      <p>Grass</p>
+      <p>Poison</p>
+      <p>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with
+        white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\2.png"></p>
+      <p>Ivysaur</p>
+      <p>Grass</p>
+      <p>Poison</p>
+      <p>Ivysaur is a quadruped Pokémon that has blue-green skin with darker patches. On top of its head are pointed
+        ears with black insides and it has narrow red eyes. It has a short, rounded snout with a wide mouth and two
+        pointed teeth in its upper jaw.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\3.png" ></p>
+      <p>Venusaur</p>
+      <p>Grass</p>
+      <p>Poison</p>
+      <p>Venusaur is a squat, quadruped Pokémon with bumpy, blue-green skin. It has small, circular red eyes, a short,
+        blunt snout, and a wide mouth with two pointed teeth in the upper jaw and four in the lower jaw. On top of its
+        head are small, pointed ears with reddish pink insides.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\3-mega.png"></p>
+      <p>MegaVenusaur</p>
+      <p>Grass</p>
+      <p>Poison</p>
+      <p>Venusaur is a squat, quadruped Pokémon with bumpy, blue-green skin. It has small, circular red eyes, a short,
+        blunt snout, and a wide mouth with two pointed teeth in the upper jaw and four in the lower jaw. On top of its
+        head are small, pointed ears with reddish pink insides</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\4.png"></p>
+      <p>Charmander</p>
+      <p>Fire</p>
+      <p>None</p>
+      <p>Charmander is a bipedal, reptilian Pokémon with a primarily orange body and blue eyes. Its underside from the
+        chest down and the soles of its feet are cream-colored. A fire burns at the tip of this Pokémon's slender tail
+        and has blazed there
+        since Charmander's birth. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\5.png"></p>
+      <p>Charmeleon</p>
+      <p>Fire</p>
+      <p>None</p>
+      <p>Charmeleon is a bipedal, reptilian Pokémon. It has dark red scales and a cream underside from the chest down.
+        It has narrow, blue eyes and a long snout with a slightly hooked tip. On the back of its head is a single
+        horn-like protrusion.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\6.png"></p>
+      <p>Charizard</p>
+      <p>Fire</p>
+      <p>Flying</p>
+      <p>Charizard is a draconic, bipedal Pokémon. It is primarily orange with a cream underside from the chest to the
+        tip of its tail. It has a long neck, small blue eyes, slightly raised nostrils, and two horn-like structures
+        protruding from the back of its rectangular head. There are two fangs visible in the upper jaw when its mouth is
+        closed.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\6-mega-x.png"></p>
+      <p>MegaCharizardX</p>
+      <p>Fire</p>
+      <p>Dragon</p>
+      <p>Charizard is a draconic, bipedal Pokémon. It is primarily orange with a cream underside from the chest to the
+        tip of its tail. It has a long neck, small blue eyes, slightly raised nostrils, and two horn-like structures
+        protruding from the back of its rectangular head. There are two fangs visible in the upper jaw when its mouth is
+        closed.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\6-mega-y.png"></p>
+      <p>MegaCharizardY</p>
+      <p>Fire</p>
+      <p>Flying</p>
+      <p>Charizard is a draconic, bipedal Pokémon. It is primarily orange with a cream underside from the chest to the
+        tip of its tail. It has a long neck, small blue eyes, slightly raised nostrils, and two horn-like structures
+        protruding from the back of its rectangular head. There are two fangs visible in the upper jaw when its mouth is
+        closed.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\7.png" ></p>
+      <p>Squirtle</p>
+      <p>Water</p>
+      <p>None</p>
+      <p>Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs,
+        it has been shown to run on all fours in Super Smash Bros. Brawl. It has large, purplish or reddish eyes and a
+        slightly hooked upper lip. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\8.png"></p>
+      <p>Wartortle</p>
+      <p>Water</p>
+      <p>None</p>
+      <p>Wartortle is a bipedal, indigo Pokémon similar to a turtle. It has brown eyes, a dark blue streak on each
+        cheek, and two sharp teeth protruding from its upper jaw. It has three clawed fingers and pointed toes. On each
+        side of its head are feather-like ears covered in pale blue fur. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\9.png"></p>
+      <p>Blastoise</p>
+      <p>Water</p>
+      <p>None</p>
+      <p>Blastoise is a large, bipedal turtle-like Pokémon. Its body is blue and is mostly hidden by its tough, brown
+        shell. This shell has a cream-colored underside and a white ridge encircling its arms and separating the upper
+        and lower halves.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\9-mega.png"></p>
+      <p>MegaBlastoise</p>
+      <p>Water</p>
+      <p>None</p>
+      <p>Blastoise is a large, bipedal turtle-like Pokémon. Its body is blue and is mostly hidden by its tough, brown
+        shell. This shell has a cream-colored underside and a white ridge encircling its arms and separating the upper
+        and lower halves.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\10.png" ></p>
+      <p>Caterpie</p>
+      <p>Bug</p>
+      <p>None</p>
+      <p>Caterpie is a Pokémon that resembles a green caterpillar with a yellow underside and teardrop-shaped tail. As
+        Caterpie grow and develop over time, it will shed its skin many times before finally cocooning itself in thick
+        silk. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\11.png" ></p>
+      <p>Metapod</p>
+      <p>Bug</p>
+      <p>None</p>
+      <p>Metapod is a Pokémon that resembles a green chrysalis. Its body is crescent-shaped with several segments making
+        up the lower point. The front of its shell resembles a face with heavy-lidded eyes and a sharply pointed nose.
+      </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\12.png" ></p>
+      <p>Butterfree</p>
+      <p>Bug</p>
+      <p>Flying</p>
+      <p>Butterfree resembles a vaguely anthropomorphic butterfly with a purple body. Unlike true insects, it only has
+        two body segments and four light blue legs. The upper pair of legs resemble small, three-fingered hands, while
+        the lower pair resembles long, digit-less feet.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\13.png" ></p>
+      <p>Weedle</p>
+      <p>Bug</p>
+      <p>Poison</p>
+      <p>Weedle is a larval Pokémon with a segmented body ranging in color from yellow to reddish-brown. Each segment of
+        its body is a sphere. It has a bulbous red nose on its face and two spherical feet on each body segment. The
+        combination of red and yellow in its color scheme creates a bright warning to predators that it is poisonous.
+      </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\14.png"></p>
+      <p>Kakuna</p>
+      <p>Bug</p>
+      <p>Poison</p>
+      <p>Kakuna is a yellow, cocoon-like Pokémon. Kakuna has a dome-shaped head and black, triangular eyes. It has two
+        scythe-like arms in the middle of its body. When it comes close to evolving, its body gives off heat that makes
+        it warm to the touch. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\15.png"></p>
+      <p>Beedrill</p>
+      <p>Bug</p>
+      <p>Poison</p>
+      <p>Beedrill mostly resembles a bipedal, yellow wasp; however, it only has four legs instead of six and lacks
+        pigment pits. Beedrill's head is round with a slightly pointed mouth, large, red eyes, and black antennae with a
+        sharp bend in the middle. Its forelegs are tipped with long, conical stingers.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\15-mega.png"></p>
+      <p>MegaBeedrill</p>
+      <p>Bug</p>
+      <p>Poison</p>
+      <p>Beedrill mostly resembles a bipedal, yellow wasp; however, it only has four legs instead of six and lacks
+        pigment pits. Beedrill's head is round with a slightly pointed mouth, large, red eyes, and black antennae with a
+        sharp bend in the middle. Its forelegs are tipped with long, conical stingers.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\16.png"></p>
+      <p>Pidgey</p>
+      <p>Normal</p>
+      <p>Flying</p>
+      <p>Pidgey is a small, plump-bodied avian Pokémon. It is primarily brown with a cream-colored face, underside, and
+        flight feathers. On top of its head is a short crest of three tufts. The center crest feathers are brown and the
+        outer two tufts are cream-colored. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\17.png"></p>
+      <p>Pideotto</p>
+      <p>Normal</p>
+      <p>Flying</p>
+      <p>Pidgeotto is a raptor-like avian Pokémon. It is covered with brown feathers, has a cream-colored face,
+        underside, and flight feathers. It has a crest of pinkish-red feathers on its head and black, angular markings
+        behind its eyes. The plumage of its tail has alternating red and yellow feathers with ragged tips. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\18.png"></p>
+      <p>Pidgeot</p>
+      <p>Normal</p>
+      <p>Flying</p>
+      <p>Pidgeot is an avian Pokémon with large wings, sharp talons, and a short, hooked beak. Its glossy plumage is
+        mostly brown with cream-colored underparts and flight feathers. Its head has a decorated crest that is nearly as
+        long as its body.</p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\18-mega.png"></p>
+      <p>MegaPidgeot</p>
+      <p>Normal</p>
+      <p>Flying</p>
+      <p>Pidgeot is an avian Pokémon with large wings, sharp talons, and a short, hooked beak. Its glossy plumage is
+        mostly brown with cream-colored underparts and flight feathers. Its head has a decorated crest that is nearly as
+        long as its body.</p>
+    </li><br>
+
+
+
+    <li>
+      <p><img src=".\pokemon\19.png"></p>
+      <p>Rattata</p>
+      <p>Normal</p>
+      <p>None</p>
+      <p>Rattata is a small, quadruped rodent Pokémon. It has purple fur with a cream-colored face, paws, and
+        underbelly. It has narrow, red eyes, rounded ears with cream-colored insides, and a single whisker on each
+        cheek. Its long tail is tightly curled at the end. </p>
+    </li><br>
+
+    <li>
+      <p><img src=".\pokemon\20.png"></p>
+      <p>Raticate</p>
+      <p>Normal</p>
+      <p>None</p>
+      <p>Raticate is a large, rodent-like Pokémon. Although it is often depicted on its hind legs, it is a quadruped. It
+        is primarily tawny-colored with a cream underside. It has narrow black eyes, ears with ragged edges and dark
+        insides, and large incisors that grow constantly. </p>
+    </li><br>
+    <!--<li><img src="C:\Users\khan67\Desktop\pokemon\1.png" alt="Bulbasaur" width="200" height="200"></li>
   <li>Bulbasaur</li>
   <li>Grass</li>
   <li>Poison</li>
@@ -53,9 +312,10 @@ img {
   
   <li><img src="C:\Users\khan67\Desktop\pokemon\2.png" alt="Ivysaur" width="200" height="200"></li>
   <li>Ivysaur</li>-->
-</ul>
+  </ul>
 
 
 
 </body>
+
 </html>
