@@ -1,27 +1,27 @@
-h1{
-    font: 50px/50px "Impact"; text-align: center; 
-  }
-  p {
-    display: block;
-    width: 20%;
-    float: left;
-  }
+h1 {
+  font: 50px/50px "Impact";
+  text-align: center;
+}
 
-  p1 {
-    color:crimson;
-  }
+p {
+  display: block;
+  width: 20%;
+  float: left;
+}
 
-  p2{
-    color:darkblue;
-  }
-  p3{
-    color:darkgreen;
-  }
-  p4{
-    color:blueviolet;
-  }
+p1 {
+  color: crimson;
+}
 
-  img {
-    width: 60px;
-    height: 60px;
-  }
+p2 {
+  color: darkblue;
+}
+
+p3 {
+  color: blueviolet;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
