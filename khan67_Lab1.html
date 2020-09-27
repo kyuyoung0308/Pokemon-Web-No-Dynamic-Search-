@@ -14,15 +14,27 @@
 
   <h1>Kanto Region Pokedex</h1>
 
-  <input type="text" name="Search Name" id="names">
-  <input type="submit" name="Search Name" value="Search By Name" onClick="searchName()">
-
-  <input type="text" name="Search Number" id="numbers">
+  <input type="text" placeholder="Search By Number.." name="Search Number" id="numbers">
   <input type="submit" name="Search Number" value="Search By Number" onClick="searchNumber()">
+
+  <input type="text" placeholder="Search By Name.." name="Search Name" id="names">
+  <input type="submit" name="Search Name" value="Search By Name" onClick="searchName()">
 
   <script src="PokemonData.js"></script>
 
   <ul style="list-style-type:none;">
+
+    <li><b>
+      <p>
+        <p1>FIRST EVOLUTION (RED)</p1>
+      </p>
+      <p>
+        <p2>SECOND EVOLUTION (GREEN)</p2>
+      </p>
+      <p>
+        <p3>THIRD EVOLUTION (BLUE VIOLET)</p3>
+      </p>
+    </b></li><br><br><br>
 
     <li><b>
         <p>Pokemon Image</p>
@@ -36,7 +48,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\1.png"> </p>
-        <p>Bulbasaur</p>
+        <b><p>#001 Bulbasaur</p></b>
         <p>Grass</p>
         <p>Poison</p>
         <p>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with
@@ -47,7 +59,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\2.png"></p>
-        <p>Ivysaur</p>
+        <b><p>#002 Ivysaur</p></b>
         <p>Grass</p>
         <p>Poison</p>
         <p>Ivysaur is a quadruped Pokémon that has blue-green skin with darker patches. On top of its head are pointed
@@ -59,7 +71,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\3.png"></p>
-        <p>Venusaur</p>
+        <b><p>#003 Venusaur</p></b>
         <p>Grass</p>
         <p>Poison</p>
         <p>Venusaur is a squat, quadruped Pokémon with bumpy, blue-green skin. It has small, circular red eyes, a short,
@@ -71,7 +83,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\4.png"></p>
-        <p>Charmander</p>
+        <b><p>#004 Charmander</p></b>
         <p>Fire</p>
         <p>None</p>
         <p>Charmander is a bipedal, reptilian Pokémon with a primarily orange body and blue eyes. Its underside from the
@@ -84,7 +96,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\5.png"></p>
-        <p>Charmeleon</p>
+        <b><p>#005 Charmeleon</p></b>
         <p>Fire</p>
         <p>None</p>
         <p>Charmeleon is a bipedal, reptilian Pokémon. It has dark red scales and a cream underside from the chest down.
@@ -96,7 +108,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\6.png"></p>
-        <p>Charizard</p>
+        <b><p>#006 Charizard</p></b>
         <p>Fire</p>
         <p>Flying</p>
         <p>Charizard is a draconic, bipedal Pokémon. It is primarily orange with a cream underside from the chest to the
@@ -110,7 +122,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\7.png"></p>
-        <p>Squirtle</p>
+        <b><p>#007 Squirtle</p></b>
         <p>Water</p>
         <p>None</p>
         <p>Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short
@@ -123,7 +135,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\8.png"></p>
-        <p>Wartortle</p>
+        <b><p>#008 Wartortle</p></b>
         <p>Water</p>
         <p>None</p>
         <p>Wartortle is a bipedal, indigo Pokémon similar to a turtle. It has brown eyes, a dark blue streak on each
@@ -136,7 +148,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\9.png"></p>
-        <p>Blastoise</p>
+        <b><p>#009 Blastoise</p></b>
         <p>Water</p>
         <p>None</p>
         <p>Blastoise is a large, bipedal turtle-like Pokémon. Its body is blue and is mostly hidden by its tough, brown
@@ -148,7 +160,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\10.png"></p>
-        <p>Caterpie</p>
+        <b><p>#010 Caterpie</p></b>
         <p>Bug</p>
         <p>None</p>
         <p>Caterpie is a Pokémon that resembles a green caterpillar with a yellow underside and teardrop-shaped tail. As
@@ -160,7 +172,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\11.png"></p>
-        <p>Metapod</p>
+        <b><p>#011 Metapod</p></b>
         <p>Bug</p>
         <p>None</p>
         <p>Metapod is a Pokémon that resembles a green chrysalis. Its body is crescent-shaped with several segments
@@ -173,7 +185,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\12.png"></p>
-        <p>Butterfree</p>
+        <b><p>#012 Butterfree</p></b>
         <p>Bug</p>
         <p>Flying</p>
         <p>Butterfree resembles a vaguely anthropomorphic butterfly with a purple body. Unlike true insects, it only has
@@ -185,7 +197,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\13.png"></p>
-        <p>Weedle</p>
+        <b><p>#013 Weedle</p></b>
         <p>Bug</p>
         <p>Poison</p>
         <p>Weedle is a larval Pokémon with a segmented body ranging in color from yellow to reddish-brown. Each segment
@@ -199,7 +211,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\14.png"></p>
-        <p>Kakuna</p>
+        <b><p>#014 Kakuna</p></b>
         <p>Bug</p>
         <p>Poison</p>
         <p>Kakuna is a yellow, cocoon-like Pokémon. Kakuna has a dome-shaped head and black, triangular eyes. It has two
@@ -212,7 +224,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\15.png"></p>
-        <p>Beedrill</p>
+        <b><p>#015 Beedrill</p></b>
         <p>Bug</p>
         <p>Poison</p>
         <p>Beedrill mostly resembles a bipedal, yellow wasp; however, it only has four legs instead of six and lacks
@@ -225,7 +237,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\16.png"></p>
-        <p>Pidgey</p>
+        <b><p>#016 Pidgey</p></b>
         <p>Normal</p>
         <p>Flying</p>
         <p>Pidgey is a small, plump-bodied avian Pokémon. It is primarily brown with a cream-colored face, underside,
@@ -239,7 +251,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\17.png"></p>
-        <p>Pideotto</p>
+        <b><p>#017 Pideotto</p></b>
         <p>Normal</p>
         <p>Flying</p>
         <p>Pidgeotto is a raptor-like avian Pokémon. It is covered with brown feathers, has a cream-colored face,
@@ -251,7 +263,7 @@
     <li>
       <p3>
         <p><img src=".\pokemon\18.png"></p>
-        <p>Pidgeot</p>
+        <b><p>#018 Pidgeot</p></b>
         <p>Normal</p>
         <p>Flying</p>
         <p>Pidgeot is an avian Pokémon with large wings, sharp talons, and a short, hooked beak. Its glossy plumage is
@@ -264,7 +276,7 @@
     <li>
       <p1>
         <p><img src=".\pokemon\19.png"></p>
-        <p>Rattata</p>
+        <b><p>#019 Rattata</p></b>
         <p>Normal</p>
         <p>None</p>
         <p>Rattata is a small, quadruped rodent Pokémon. It has purple fur with a cream-colored face, paws, and
@@ -276,7 +288,7 @@
     <li>
       <p2>
         <p><img src=".\pokemon\20.png"></p>
-        <p>Raticate</p>
+        <b><p>#020 Raticate</p></b>
         <p>Normal</p>
         <p>None</p>
         <p>Raticate is a large, rodent-like Pokémon. Although it is often depicted on its hind legs, it is a quadruped.
@@ -287,7 +299,7 @@
     </li><br>
 
     <h2>References: </h2>
-    <p5>Pokemon Biology:
+    <p5>Pokemon Biology and Type From
       <a
         href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kanto_Pok%C3%A9dex_number">https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kanto_Pok%C3%A9dex_number</a>
     </p5>

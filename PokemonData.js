@@ -1,9 +1,9 @@
 var namePokemon;
 
-var pokemonName = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle",
-  "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pideotto", "Pidgeot", "Rattata", "Raticate"];
-var type = ["Grass Poison", "Grass Poison", "Grass Poison", "Fire", "Fire", "Fire Flying", "Water", "Water", "Water",
-  "Bug", "Bug", "Bug Flying", "Bug Poison", "Bug Poison", "Bug Poison", "Normal Flying", "Normal Flying", "Normal Flying", "Normal", "Normal"];
+var pokemonName = ["Bulbasaur ", "Ivysaur ", "Venusaur ", "Charmander ", "Charmeleon ", "Charizard ", "Squirtle ", "Wartortle ",
+  "Blastoise ", "Caterpie ", "Metapod ", "Butterfree ", "Weedle ", "Kakuna ", "Beedrill ", "Pidgey ", "Pideotto ", "Pidgeot ", "Rattata ", "Raticate "];
+var type = ["Grass Poison ", "Grass Poison ", "Grass Poison ", "Fire ", "Fire ", "Fire Flying ", "Water ", "Water ", "Water ",
+  "Bug ", "Bug ", "Bug Flying ", "Bug Poison ", "Bug Poison ", "Bug Poison ", "Normal Flying ", "Normal Flying ", "Normal Flying ", "Normal ", "Normal "];
 function searchName() {
   var listName = [];
   var listType = [];
@@ -13,6 +13,9 @@ function searchName() {
 
   if (parseInt(namePokemon) || hasNumber.test(namePokemon)) {
     alert("Please Enter ONLY Alphabetical Characters.");
+    return;
+  }else if (namePokemon.length > 21){
+    alert("Enter Less Than 20 Characters Please.")
     return;
   }
 
