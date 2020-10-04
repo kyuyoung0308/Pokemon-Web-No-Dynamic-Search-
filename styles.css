@@ -3,6 +3,13 @@ h1 {
   text-align: center;
 }
 
+div {
+  border-style: ridge;
+  border-color: rgb(255, 0, 0);
+  border-width: 5px;
+  background-color: rgb(0, 238, 255);    
+  text-align: center;
+}
 p {
   display: block;
   width: 20%;
