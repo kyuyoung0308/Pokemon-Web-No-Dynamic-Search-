@@ -15,17 +15,21 @@
   <h1>Kanto Region Pokedex</h1>
 
   
-  <div class="topDiv">
-    <p4>Pokemon will appear here</p4>
-  </div><br>
+  <div id = "first">
+    <p4><b>Pokemon will appear here</b></p4><br>
+    <p3>HELLO</p3>
 
-  <input type="text" placeholder="Search By Number.." name="Search Number" id="numbers">
+
+  </div>
+
+  <input type="text" placeholder="Search By Number.." name="Search Number" id="numbers" oninput = "searchNumber()">
   <input type="submit" name="Search Number" value="Search By Number" onClick="searchNumber()">
 
-  <input type="text" placeholder="Search By Name.." name="Search Name" id="names">
+  <input type="text" placeholder="Search By Name.." name="Search Name" id="names" oninput = "searchName()">
   <input type="submit" name="Search Name" value="Search By Name" onClick="searchName()">
 
-  <script src="PokemonData.js"></script>
+  
+
 
 
   <ul style="list-style-type:none;">
@@ -52,18 +56,18 @@
       </b></li><br>
 
 
-    <li>
-      <p1>
+    <li id = "bulbasaur">
+      <p1> 
         <p><img src=".\pokemon\1.png"> </p>
-        <b><p>#001 Bulbasaur</p></b>
+        <p>#001 Bulbasaur</p>
         <p>Grass</p>
         <p>Poison</p>
         <p>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with
           white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth.</p>
-        <p1>
+        </p1>
     </li><br>
 
-    <li>
+    <li id = "ivysaur">
       <p2>
         <p><img src=".\pokemon\2.png"></p>
         <b><p>#002 Ivysaur</p></b>
@@ -75,7 +79,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "venusaur">
       <p3>
         <p><img src=".\pokemon\3.png"></p>
         <b><p>#003 Venusaur</p></b>
@@ -87,7 +91,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "charmander">
       <p1>
         <p><img src=".\pokemon\4.png"></p>
         <b><p>#004 Charmander</p></b>
@@ -100,7 +104,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "charmeleon">
       <p2>
         <p><img src=".\pokemon\5.png"></p>
         <b><p>#005 Charmeleon</p></b>
@@ -112,7 +116,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "charizard">
       <p3>
         <p><img src=".\pokemon\6.png"></p>
         <b><p>#006 Charizard</p></b>
@@ -126,7 +130,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "squirtle">
       <p1>
         <p><img src=".\pokemon\7.png"></p>
         <b><p>#007 Squirtle</p></b>
@@ -139,7 +143,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "wartortle">
       <p2>
         <p><img src=".\pokemon\8.png"></p>
         <b><p>#008 Wartortle</p></b>
@@ -152,7 +156,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "blastoise">
       <p3>
         <p><img src=".\pokemon\9.png"></p>
         <b><p>#009 Blastoise</p></b>
@@ -164,7 +168,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "caterpie">
       <p1>
         <p><img src=".\pokemon\10.png"></p>
         <b><p>#010 Caterpie</p></b>
@@ -176,7 +180,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "metapod">
       <p2>
         <p><img src=".\pokemon\11.png"></p>
         <b><p>#011 Metapod</p></b>
@@ -189,7 +193,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "butterfree">
       <p3>
         <p><img src=".\pokemon\12.png"></p>
         <b><p>#012 Butterfree</p></b>
@@ -201,7 +205,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "weedle">
       <p1>
         <p><img src=".\pokemon\13.png"></p>
         <b><p>#013 Weedle</p></b>
@@ -215,7 +219,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "kakuna">
       <p2>
         <p><img src=".\pokemon\14.png"></p>
         <b><p>#014 Kakuna</p></b>
@@ -228,7 +232,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "beedrill">
       <p3>
         <p><img src=".\pokemon\15.png"></p>
         <b><p>#015 Beedrill</p></b>
@@ -241,7 +245,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "pidgey">
       <p1>
         <p><img src=".\pokemon\16.png"></p>
         <b><p>#016 Pidgey</p></b>
@@ -255,7 +259,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "pideotto">
       <p2>
         <p><img src=".\pokemon\17.png"></p>
         <b><p>#017 Pideotto</p></b>
@@ -267,7 +271,7 @@
       </p2>
     </li><br>
 
-    <li>
+    <li id = "pidgeot">
       <p3>
         <p><img src=".\pokemon\18.png"></p>
         <b><p>#018 Pidgeot</p></b>
@@ -280,7 +284,7 @@
       </p3>
     </li><br>
 
-    <li>
+    <li id = "rattata">
       <p1>
         <p><img src=".\pokemon\19.png"></p>
         <b><p>#019 Rattata</p></b>
@@ -292,7 +296,7 @@
       </p1>
     </li><br>
 
-    <li>
+    <li id = "raticate">
       <p2>
         <p><img src=".\pokemon\20.png"></p>
         <b><p>#020 Raticate</p></b>
@@ -312,6 +316,7 @@
     </p5>
   </ul>
 
+  <script src="PokemonData.js"></script>
 
 
 </body>
