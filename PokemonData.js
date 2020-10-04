@@ -1,5 +1,5 @@
 var namePokemon;
-
+//HELLO
 var pokemonName = ["Bulbasaur ", "Ivysaur ", "Venusaur ", "Charmander ", "Charmeleon ", "Charizard ", "Squirtle ", "Wartortle ",
   "Blastoise ", "Caterpie ", "Metapod ", "Butterfree ", "Weedle ", "Kakuna ", "Beedrill ", "Pidgey ", "Pideotto ", "Pidgeot ", "Rattata ", "Raticate "];
 var type = ["Grass Poison ", "Grass Poison ", "Grass Poison ", "Fire ", "Fire ", "Fire Flying ", "Water ", "Water ", "Water ",
