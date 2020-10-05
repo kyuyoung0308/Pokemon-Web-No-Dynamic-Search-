@@ -5,13 +5,13 @@ var type = ["Grass Poison ", "Grass Poison ", "Grass Poison ", "Fire ", "Fire ",
   "Bug ", "Bug ", "Bug Flying ", "Bug Poison ", "Bug Poison ", "Bug Poison ", "Normal Flying ", "Normal Flying ", "Normal Flying ", "Normal ", "Normal "];
 
 
-
+//searching oninput
 function searchingName() {
   //If the search bar is empty it will return empty
 
   var first = document.getElementById("first");
 
-
+  //deletes the dynamic search results when the input is empty
   var toDelete = document.querySelectorAll("#first p3")[0];
   if (toDelete != undefined) {
     first.removeChild(toDelete);
@@ -26,9 +26,8 @@ function searchingName() {
   var text = [];
 
   var listPokemonMatch = searchNameId();
- 
-  console.log(listPokemonMatch);
 
+  //searches for the id's of each list item
   for (var x = 0; x < listPokemonMatch.length; x++) {
     var text2 = [];
     text[x] = document.querySelectorAll("#" + listPokemonMatch[x].toLowerCase() + " p");
