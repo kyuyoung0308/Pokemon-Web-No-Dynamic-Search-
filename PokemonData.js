@@ -1,4 +1,4 @@
-//var namePokemon;
+
 var pokemonName = ["Bulbasaur", "Ivysaur ", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle",
   "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pideotto", "Pidgeot", "Rattata", "Raticate"];
 var type = ["Grass Poison ", "Grass Poison ", "Grass Poison ", "Fire ", "Fire ", "Fire Flying ", "Water ", "Water ", "Water ",
@@ -6,31 +6,27 @@ var type = ["Grass Poison ", "Grass Poison ", "Grass Poison ", "Fire ", "Fire ",
 
 
 
-function searching() {
+function searchingName() {
   //If the search bar is empty it will return empty
 
   var first = document.getElementById("first");
 
 
-  //document.querySelectorAll("#first p3");
   var toDelete = document.querySelectorAll("#first p3")[0];
-  if (toDelete != undefined){
+  if (toDelete != undefined) {
     first.removeChild(toDelete);
   }
 
-  if (document.getElementById("names").value == ""){
+  if (document.getElementById("names").value == "") {
     return;
   }
 
   var par = document.createElement("p3");
 
-  //var text = document.createTextNode("hello there");
   var text = [];
- 
-
 
   var listPokemonMatch = searchNameId();
-  var b = searchNumberId();
+ 
   console.log(listPokemonMatch);
 
   for (var x = 0; x < listPokemonMatch.length; x++) {
@@ -43,28 +39,49 @@ function searching() {
     //loops through all p tags 
     for (var index = 1; index < text[x].length; index++) {
 
-      //text = document.querySelectorAll("#" + a + " p");
-      //console.log(text[1]);
-      //console.log(text.length);
-
-      //= document.createTextNode(text[1]);
-      //par.appendChild(text2);
-      //first.appendChild(par);
       text2[index] = document.createTextNode(text[x][index].textContent);
       console.log(text2[index]);
       par.appendChild(text2[index]);
       first.appendChild(par);
+
     }
+
   }
 }
-//par.appendChild(text2);
 
-//first.appendChild(par);
+function searchingNumber() {
+
+  var first = document.getElementById("first");
 
 
+  var toDelete = document.querySelectorAll("#first p3")[0];
+  if (toDelete != undefined) {
+    first.removeChild(toDelete);
+  }
+
+  if (document.getElementById("numbers").value == "") {
+    return;
+  }
+
+  var par = document.createElement("p3");
+
+  var num = [];
+  var num2 =[];
+
+  var listPokemonMatch = searchNumberId();
 
 
-//HELLO
+  num = document.querySelectorAll("#" + pokemonName[listPokemonMatch] + " p");
+
+  //loops through all p tags 
+  for (var index = 1; index < num.length; index++) {
+
+    num2 = document.createTextNode(num[index].textContent);
+    par.appendChild(num2[index]);
+    first.appendChild(par);
+
+  }
+}
 
 function searchNameId() {
   var listName = [];
@@ -92,7 +109,7 @@ function searchNameId() {
 function searchNumberId() {
   var numberPokemon;
   var listName = [];
-  var listType = [];
+
   numberPokemon = document.getElementById("numbers").value;
 
   listName[0] = pokemonName[numberPokemon - 1];
